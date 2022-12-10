@@ -1,6 +1,7 @@
 #202235134 MinSeok Choi
 
 import cv2
+import time
 
 webcam = cv2.VideoCapture(0)
 
@@ -8,14 +9,18 @@ if not webcam.isOpened():
     print("Could not open webcam")
     exit()
 
-while webcam.isOpened():
-    status, frame = webcam.read()
+prev_time = 0
+FPS = 10
 
-    if status:
-        cv2.imshow("test", frame)
-
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
+while 1:
+    ret, frame = webcam.read()
+    current_time = time.time() - prev_time
+    if (ret is True) and (current_time > 1. / FPS):
+        prev_time = time.time()
+        frame = cv2.
+        cv2.imshow('VideoCapture', frame)
+        if cv2.waitKey(1) > 0:
+            break
 
 webcam.release()
 cv2.destroyAllWindows()
