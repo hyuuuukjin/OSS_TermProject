@@ -17,7 +17,7 @@ while 1:
     current_time = time.time() - prev_time
     if (ret is True) and (current_time > 1. / FPS):
         prev_time = time.time()
-        frame = cv2.
+        frame = cv2.flip(frame, 1)
         cv2.imshow('VideoCapture', frame)
         if cv2.waitKey(1) > 0:
             break
