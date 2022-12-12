@@ -18,7 +18,7 @@ Else if the face is not recognized on the webcam, we consider it as NOT taking t
 - Determine whether there is a person or not  //임상균 
 ***
 
-## **Requirement:**
+## **Requirements:**
 - Install 'mediapipe': ```pip install mediapipe```   
 - Haar Cascade XML file for detection:   
 https://github.com/opencv/opencv/tree/master/data/haarcascades   
