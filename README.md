@@ -10,11 +10,11 @@ Else if the face is not recognized on the webcam, we consider it as NOT taking t
 ***
 
 ## **Roles:**   
-#### We divided into 4 parts:
-1. Get numpy array image from webcam  //최민석   
-2. Preprocessing //이정대   
-3. Face recognition  //장혁진   
-4. Determine whether there is a person or not  //임상균 
+#### We divided the project into 4 parts/branches:
+- Get Numpy array image from webcam  //최민석   
+- Preprocessing //이정대   
+- Face recognition  //장혁진   
+- Determine whether there is a person or not  //임상균 
 ***
 
 ## **Before start**
@@ -28,7 +28,7 @@ python main.py
 ***
 
 ## **Result:**   
-After typing ```python main.py```, you can run the detection. It will automatically open the webcam. Every 2 frames(0.5 sec), it will recognize the face and determine whether a person is attending class or not through the presence or absence of face recognition on the webcam. And prints the user's class attendance status every 5 seconds. (It is set to recognize face every 2 frames, so it may seem like lagging, but it's NOT)
+After typing ```python main.py```, you can run the detection. It will automatically open the webcam. Every 2 frames(0.5 sec), it will recognize the face and determine whether a person is attending class or not through the presence or absence of face recognition on the webcam. And prints the user's class attendance status every 5 seconds. (To prevent recognition errors, the face is set to be recognized every 2 frames, which may appear to be lagging, but it's NOT)
 
 #### See the output results below:   
 
