@@ -1,7 +1,7 @@
 #202235134 MinSeok Choi
 import cv2
 import time
-import determine_person
+import lim_determine
 # import FaceMesh
 
 def webcam_main():
@@ -21,8 +21,8 @@ def webcam_main():
             prev_time = time.time()
             frame = cv2.flip(frame, 1)
             # frame1 = FaceMesh.Pritreatment(frame)
-            check += determine_person.check_face(frame)
-            # cv2.imshow("test", frame)
+            check += lim_determine.check_face(frame)
+            cv2.imshow("test", frame)
             if cv2.waitKey(1) > 0:
                 break
         if curframe == 10:
