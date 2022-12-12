@@ -12,7 +12,7 @@ Detecting face through webcam, and it determines whether a person is taking a cl
 ***
 
 ## **Before start**
-*You have to install 'mediapipe' by command: "pip install mediapipe"*   
+*You have to install 'mediapipe' by command: ```pip install mediapipe```*   
 ***
 
 ## **Command to run the detection:**   
