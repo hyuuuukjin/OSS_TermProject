@@ -8,7 +8,7 @@
 4. Feedback after checking there is a person  //임상균 
 
 ***
-### Reference
+### References
 #### 
 - Uses Haar Cascade to detect face through webcam(XML file for detection) :   
 https://github.com/opencv/opencv/tree/master/data/haarcascades 
