@@ -1,19 +1,22 @@
-# OSS_TermProject_Team8
-## Detecting face through webcam, and it determines whether a person is taking a class or not.
+# OSS_TermProject_Team8   
 ***
-### We divided into 4 parts:
+## **About Project**    
+Detecting face through webcam, and it determines whether a person is taking a class or not.
+***
+## **Roles**
+#### We divided into 4 parts:
 1. Get numpy array image from webcam  //최민석   
 2. Preprocessing //이정대   
 3. Face recognition  //장혁진   
 4. Determine whether there is a person or not  //임상균 
 ***
-### Command to run the detection:   
+## **Command to run the detection:**   
 
 ***
-### Result:   
+## **Result:**      
 
 ***
-### References:   
+## **References:**    
 #### 
 - Useing Haar Cascade to detect face through webcam(XML file for detection) :   
 https://github.com/opencv/opencv/tree/master/data/haarcascades 
