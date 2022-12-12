@@ -1,7 +1,7 @@
 # OSS_TermProject_Team8
 ## Detecting face through webcam, and it determines whether a person is taking a class or not.
 ***
-### We seperate by 4 parts :
+### We divided into 4 parts :
 1. Get numpy array image from webcam  //최민석   
 2. Preprocessing //이정대   
 3. Face recognition  //장혁진   
