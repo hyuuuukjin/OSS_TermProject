@@ -29,9 +29,9 @@ def webcam_main():
                 break
         if curframe == 10:
             if check >= 7:
-                print("face detected")
+                print("Attending Class.")
             else:
-                print("No face")
+                print("NOT Attending Class.")
             curframe = 0
             check = 0
 
