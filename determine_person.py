@@ -8,6 +8,6 @@ def check_face():
         time.sleep(1)
 
     if sum>7:
-        print("Face recognition success")
+        print("Attending Class")
     else:
-        print("Face recognition failed")
+        print("Not Attending Class")
