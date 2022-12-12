@@ -22,7 +22,7 @@ python main.py
 ***
 
 ## **Result:**   
-After typing ```python main.py```, you can run the detection. It will automatically open the webcam. After 5 seconds, it will determine whether a person is attending class or not through the presence or absence of face recognition on the webcam. It is set to receive information every 2 frames. (So it may seem like lagging, but it's NOT)
+After typing ```python main.py```, you can run the detection. It will automatically open the webcam. Every 5 seconds, it will determine whether a person is attending class or not through the presence or absence of face recognition on the webcam. It is set to receive information every 2 frames. (So it may seem like lagging, but it's NOT)
 
 #### See the output results below:   
 
@@ -33,6 +33,9 @@ After typing ```python main.py```, you can run the detection. It will automatica
 - #### Face *NOT* Detected   
 
 ![face NOT detected](https://user-images.githubusercontent.com/106862808/207097101-9859fde1-7caf-40eb-9772-e14559672e59.png)   
+
+- #### Face Detection changed
+![detection changed](https://user-images.githubusercontent.com/106862808/207104920-cd73bdb9-c3a7-4d35-87ec-aece128ecd4d.png)   
 ***
 
 ## **References:**    
