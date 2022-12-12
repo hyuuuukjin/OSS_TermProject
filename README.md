@@ -1,8 +1,14 @@
 # OSS_TermProject_Team8   
 ***
 ## **About Project:**   
-Detecting face through webcam, and it determines whether a person is taking a class or not.
+Detecting the face through a webcam, and determines whether the user is taking a class or not.   
+
+
+After checking the presence or absence of facial recognition by webcam, check and print the attendance of the class.   
+If the face is recognized on the webcam, we consider it as taking the class and print its status.    
+Else if the face is not recognized on the webcam, we consider it as NOT taking the class and print its status.
 ***
+
 ## **Roles:**   
 #### We divided into 4 parts:
 1. Get numpy array image from webcam  //최민석   
@@ -22,7 +28,7 @@ python main.py
 ***
 
 ## **Result:**   
-After typing ```python main.py```, you can run the detection. It will automatically open the webcam. Every 5 seconds, it will determine whether a person is attending class or not through the presence or absence of face recognition on the webcam. It is set to receive information every 2 frames. (So it may seem like lagging, but it's NOT)
+After typing ```python main.py```, you can run the detection. It will automatically open the webcam. Every 2 frames(0.5 sec), it will recognize the face and determine whether a person is attending class or not through the presence or absence of face recognition on the webcam. And prints the user's class attendance status every 5 seconds. (It is set to recognize face every 2 frames, so it may seem like lagging, but it's NOT)
 
 #### See the output results below:   
 
