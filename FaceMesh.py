@@ -5,19 +5,14 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_face_mesh = mp.solutions.face_mesh
 import time
 
-def Pritreatment():
+def Pritreatment(frame):
     drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
-    cap = cv2.VideoCapture(0)
+    # cap = cv2.VideoCapture(0)
     with mp_face_mesh.FaceMesh(
         max_num_faces=1,
         refine_landmarks=True,
         min_tracking_confidence=0.5,
         min_detection_confidence=0.5) as face_mash:
-        while cap.isOpened():
-            ret, frame = cap.read()
-            if not ret:
-                print("Ignoring empty camera frame.")
-                break
             # 화면 좌우반전
             frame = cv2.cvtColor(cv2.flip(frame, 1), cv2.COLOR_BGR2RGB)
             # 성능 향상 위해 이미지 작성 불가능으로 기본 설정
