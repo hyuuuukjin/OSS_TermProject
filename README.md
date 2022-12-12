@@ -1,21 +1,40 @@
 # OSS_TermProject_Team8   
 ***
-## **About Project**    
+## **About Project:**   
 Detecting face through webcam, and it determines whether a person is taking a class or not.
 ***
-## **Roles**
+## **Roles:**   
 #### We divided into 4 parts:
 1. Get numpy array image from webcam  //최민석   
 2. Preprocessing //이정대   
 3. Face recognition  //장혁진   
 4. Determine whether there is a person or not  //임상균 
 ***
+
+## **Before start**
+*You have to install 'mediapipe' by command: "pip install mediapipe"*   
+***
+
 ## **Command to run the detection:**   
-
+```python
+python main.py   
+``` 
 ***
-## **Result:**      
 
+## **Result:**   
+After typing ```python main.py```, you can run the detection. It will automatically open the webcam. After 5 seconds, it will determine whether a person is attending class or not through the presence or absence of face recognition on the webcam. It is set to receive information every 2 frames. (So it may seem like lagging, but it's NOT)
+
+#### See the output results below:   
+
+- #### Face Detected   
+
+![face detected](https://user-images.githubusercontent.com/106862808/207097459-5a49fc74-e734-489d-aaac-439da0c9cd9d.png)   
+
+- #### Face *NOT* Detected   
+
+![face NOT detected](https://user-images.githubusercontent.com/106862808/207097101-9859fde1-7caf-40eb-9772-e14559672e59.png)   
 ***
+
 ## **References:**    
 #### 
 - Using Haar Cascade to detect face through webcam(XML file for detection) :   
