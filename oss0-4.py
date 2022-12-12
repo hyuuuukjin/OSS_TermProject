@@ -1,13 +1,7 @@
 import cv2
 import time
+import face_recognition
 
-def check_face():
-    for i in range(10):
-        x=face_recognition(cam)
-        sum+=x
-        time.sleep(1)
-
-    if sum>7:
-        print("Face recognition success")
-    else:
-        print("Face recognition failed")
+def check_face(frame):
+    val = face_recognition.face_recog(frame)
+    return val[0]
