@@ -5,6 +5,7 @@ Detecting the face through a webcam, and determines whether the user is taking a
 
 
 After checking the presence or absence of facial recognition by webcam, check and print the attendance of the class.   
+
 If the face is recognized on the webcam, we consider it as taking the class and print its status.    
 Else if the face is not recognized on the webcam, we consider it as NOT taking the class and print its status.
 ***
@@ -17,8 +18,14 @@ Else if the face is not recognized on the webcam, we consider it as NOT taking t
 - Determine whether there is a person or not  //임상균 
 ***
 
-## **Before start**
-*You have to install 'mediapipe' by command: ```pip install mediapipe```*   
+## **Requirement:**
+- Install 'mediapipe': ```pip install mediapipe```   
+- Haar Cascade XML file for detection:   
+https://github.com/opencv/opencv/tree/master/data/haarcascades   
+*(XML file name should be same as "haarcascade_frontalface_default" and locates in same dir)*
+- python(3.10.6) *(version I test on)*   
+- openCV(4.6.0) *(version I test on)*   
+- Numpy(1.23.5) *(version I test on)*   
 ***
 
 ## **Command to run the detection:**   
@@ -47,7 +54,7 @@ After typing ```python main.py```, you can run the detection. It will automatica
 ## **References:**    
 #### 
 - Using Haar Cascade to detect face through webcam(XML file for detection) :   
-https://github.com/opencv/opencv/tree/master/data/haarcascades 
+https://github.com/opencv/opencv/tree/master/data/haarcascades
 - Reffered for webcam configuration :   
 https://velog.io/@nayeon_p00/OpenCV-Python-%EC%9B%B9%EC%BA%A0%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0-%ED%8A%B8%EB%9E%99%EB%B0%94%EB%A1%9C-%EB%AA%85%EB%8F%84%EC%99%80-%EC%B1%84%EB%8F%84-%EC%A1%B0%EC%A0%95%ED%95%98%EA%B8%B0-%EB%85%B8%EC%9D%B4%EC%A6%88-%EC%A0%9C%EA%B1%B0%ED%95%98%EA%B8%B0-%EB%9D%BC%EB%B2%A8%EB%A7%81%EC%9C%BC%EB%A1%9C-%EB%AC%BC%EC%B2%B4-%EC%B6%94%EC%A0%81%ED%95%98%EA%B8%B0
 - Reffered for preprocessing :
