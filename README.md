@@ -5,7 +5,7 @@
 1. Get numpy array image from webcam  //최민석   
 2. Preprocessing //이정대   
 3. Face recognition  //장혁진   
-4. Feedback after checking there is a person  //임상균 
+4. Determine whether there is a person or not  //임상균 
 
 ***
 ### References
