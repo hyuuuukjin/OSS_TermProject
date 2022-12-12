@@ -2,7 +2,7 @@
 import cv2
 import time
 import lim_determine
-# import FaceMesh
+import FaceMesh
 
 def webcam_main():
     check = 0
@@ -20,9 +20,11 @@ def webcam_main():
             curframe += 1
             prev_time = time.time()
             frame = cv2.flip(frame, 1)
-            # frame1 = FaceMesh.Pritreatment(frame)
-            check += lim_determine.check_face(frame)
-            cv2.imshow("test", frame)
+            output = FaceMesh.Pritreatment(frame)
+            val = lim_determine.check_face(frame, output)
+            check += val[0]
+            output = val[1]
+            # cv2.imshow("test", output)
             if cv2.waitKey(1) > 0:
                 break
         if curframe == 10:
